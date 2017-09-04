@@ -17,7 +17,6 @@
       <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/coverage" />
       <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/logs" />
       <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/pdepend" />
-      <exec executable="curl localhost:8080/job/test_git/build?token=TOKEN"/>
    </target>
 
    <target name="qa" description="Lance les outils d'analyses">
