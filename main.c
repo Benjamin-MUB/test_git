@@ -6,6 +6,8 @@
 
 int            main()
 {
+
+
    write(1, "OK", strlen("OK"));
    write(1, "\n", 2);
    printf("FIN\n");
