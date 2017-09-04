@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<project name="TestJenkins" default="ci" basedir="../../..">
+   <property name="source" value="src"/>
+
+   <target name="ci"
+      description="Tache principale" depends="clean,qa" />
+
+   <target name="clean" description="Vide les repertoire">
+      <delete dir="/home/hugo/Documents/benjamin/test_git/build/api" />
+      <delete dir="/home/hugo/Documents/benjamin/test_git/build/code-browser" />
+      <delete dir="/home/hugo/Documents/benjamin/test_git/build/coverage" />
+      <delete dir="/home/hugo/Documents/benjamin/test_git/build/logs" />
+      <delete dir="/home/hugo/Documents/benjamin/test_git/build/pdepend" />
+
+      <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/api" />
+      <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/code-browser" />
+      <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/coverage" />
+      <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/logs" />
+      <mkdir dir="/home/hugo/Documents/benjamin/test_git/build/pdepend" />
+   </target>
+
+   <target name="qa" description="Lance les outils d'analyses">
+      <antcall target="first_part" />
+   </target>
+
+   <target name="first_part" description="...">
+      <exec executable="pwd"/>
+      <exec executable="gcc">
+         <arg value="/home/hugo/Documents/benjamin/test_git/main.c"/>
+      </exec>
+   </target>
+
+</project>
