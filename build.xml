@@ -20,13 +20,12 @@
    </target>
 
    <target name="qa" description="Lance les outils d'analyses">
-      <antcall target="first_part" />
+      <antcall target="first_part"/>
    </target>
 
    <target name="first_part" description="...">
       <exec executable="pwd"/>
-      <exec executable="python">
-         <arg value ="-c from safe2contact.webapp.core.settings import core_bug_report; ret = core_bug_report({\'message\': \'test\'});"/>
+      <exec executable="python home/Hugo/Documents/benjamin/test_git/test.txt" vmlauncher="false">
       </exec>
    </target>
 
