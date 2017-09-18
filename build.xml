@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?> bonrsoirerer
 <project name="TestJenkins" default="ci" basedir="../../..">
    <property name="source" value="src"/>
 
