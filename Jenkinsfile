@@ -8,10 +8,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        catchError() {
-          sh 'llllll'
-        }
-        
+        sh 'lllllllllll'
       }
     }
     stage('Last') {
