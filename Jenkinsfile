@@ -9,9 +9,14 @@ pipeline {
     stage('Test') {
       steps {
         catchError() {
-          sh 'echo \'CHAMEAU\''
+          sh 'llllll'
         }
         
+      }
+    }
+    stage('Last') {
+      steps {
+        sh 'echo \'B2OBA\''
       }
     }
   }
